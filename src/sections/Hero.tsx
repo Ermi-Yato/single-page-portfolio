@@ -65,7 +65,9 @@ export const HeroSection = () => {
           <Image src={memojiImage} alt='a person looking at a laptop' className='size-[100px]' />
 
           <div className='bg-gray-950 px-4 py-1.5 flex items-center gap-4 rounded-lg'>
-            <div className='bg-green-500 size-3 rounded-full'></div>
+            <div className='bg-green-500 size-3 rounded-full relative'>
+              <div className='absolute inset-0 bg-green-500 rounded-full animate-ping-large'></div>
+            </div>
             <div className='text-sm font-medium'>Available for new projects</div>
           </div>
         </div>

@@ -39,13 +39,21 @@ const toolboxItems = [
 
 export const ToolboxItems = ({ className }: { className?: string }) => {
   return (
-    <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+    <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] md:mt-1.5">
 
       <div className={twMerge("mt-6 flex flex-none gap-6", className)}>
         {toolboxItems.map((item) => (
 
-          <div className="inline-flex gap-4 items-center border-2 border-white/15 rounded-lg px-3 py-2">
-            <span><item.icon className="size-10" /></span>
+          <div className="inline-flex gap-2 items-center border-2 border-white/15 rounded-lg px-3 py-2">
+            <span><item.icon className="size-10 fill-[url(#icons-gradient)]" /></span>
+            {/* SVG icon gradient  */}
+            <svg className="size-0">
+              <linearGradient id="icons-gradient">
+                <stop offset="0%" stopColor="rgb(110,231,183)"></stop>
+                <stop offset="100%" stopColor="rgb(125, 211, 252)"></stop>
+              </linearGradient>
+            </svg>
+
             <span className="font-semibold">{item.title}</span>
           </div>
 
