@@ -24,36 +24,36 @@ export const HeroSection = () => {
         <div className={`${heroRingStyle} size-[1200px]`}></div>
 
         {/* Hero stars and sparkles */}
-        <HeroOrbit size={800} rotationAngle={-72}>
+        <HeroOrbit size={800} rotationAngle={-72} orbitDuration='40s' rotationDuration='10s'>
           <StarIcon className='size-20 text-emerald-300' />
         </HeroOrbit>
-        <HeroOrbit size={530} rotationAngle={20}>
+        <HeroOrbit size={530} rotationAngle={20} orbitDuration='30s' rotationDuration='10s'>
           <StarIcon className='size-12 text-emerald-300' />
         </HeroOrbit>
-        <HeroOrbit size={570} rotationAngle={90}>
+        <HeroOrbit size={570} rotationAngle={90} orbitDuration='34s' rotationDuration='10s'>
           <StarIcon className='size-8 text-emerald-300' />
         </HeroOrbit>
 
-        <HeroOrbit size={700} rotationAngle={150}>
+        <HeroOrbit size={700} rotationAngle={150} orbitDuration='38s' rotationDuration='3s'>
           <SparkleIcon className='size-12 text-emerald-300/15' />
         </HeroOrbit>
-        <HeroOrbit size={510} rotationAngle={180}>
+        <HeroOrbit size={510} rotationAngle={180} orbitDuration='35s' rotationDuration='3s'>
           <SparkleIcon className='size-7 text-emerald-300/15' />
         </HeroOrbit>
-        <HeroOrbit size={420} rotationAngle={90}>
+        <HeroOrbit size={420} rotationAngle={90} orbitDuration='30s' rotationDuration='3s'>
           <SparkleIcon className='size-5 text-emerald-300/15' />
         </HeroOrbit>
-        <HeroOrbit size={425} rotationAngle={-15}>
+        <HeroOrbit size={425} rotationAngle={-15} orbitDuration='32s' rotationDuration='3s'>
           <SparkleIcon className='size-7 text-emerald-300/15' />
         </HeroOrbit>
 
-        <HeroOrbit size={705} rotationAngle={85}>
+        <HeroOrbit size={705} rotationAngle={85} orbitDuration='37s'>
           <div className='size-3 bg-emerald-300/15 rounded-full'></div>
         </HeroOrbit>
-        <HeroOrbit size={530} rotationAngle={-40}>
+        <HeroOrbit size={530} rotationAngle={-40} orbitDuration='30s'>
           <div className='size-2 bg-emerald-300/15 rounded-full'></div>
         </HeroOrbit>
-        <HeroOrbit size={650} rotationAngle={-5}>
+        <HeroOrbit size={650} rotationAngle={-5} orbitDuration='32s'>
           <div className='size-2 bg-emerald-300/15 rounded-full'></div>
         </HeroOrbit>
       </div>
