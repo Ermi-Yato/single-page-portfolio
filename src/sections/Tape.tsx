@@ -24,7 +24,7 @@ export const TapeSection = () => {
         <div className='flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]'>
           <div className='flex flex-none gap-4 text-gray-900'>
             {words.map((word) => (
-              <div className='inline-flex gap-4 items-center'>
+              <div key={word} className='inline-flex gap-4 items-center'>
                 <span className='uppercase font-extrabold text-sm'>{word}</span>
                 <StarIcon className='size-6 -rotate-12' />
               </div>

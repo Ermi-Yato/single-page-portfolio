@@ -96,7 +96,7 @@ export const AboutSection = () => {
 
               <div className="mt-8 relative">
                 {personalHobbies.map((hobby) => (
-                  <div className="px-6 py-1.5 bg-gradient-to-r from-emerald-300 to-sky-300 
+                  <div key={hobby.title} className="px-6 py-1.5 bg-gradient-to-r from-emerald-300 to-sky-300 
                   inline-flex items-center gap-2 rounded-3xl absolute" style={{
                       top: hobby.top,
                       left: hobby.left,

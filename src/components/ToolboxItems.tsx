@@ -44,7 +44,7 @@ export const ToolboxItems = ({ className }: { className?: string }) => {
       <div className={twMerge("mt-6 flex flex-none gap-6", className)}>
         {toolboxItems.map((item) => (
 
-          <div className="inline-flex gap-2 items-center border-2 border-white/15 rounded-lg px-3 py-2">
+          <div key={item.title} className="inline-flex gap-2 items-center border-2 border-white/15 rounded-lg px-3 py-2">
             <span><item.icon className="size-10 fill-[url(#icons-gradient)]" /></span>
             {/* SVG icon gradient  */}
             <svg className="size-0">
