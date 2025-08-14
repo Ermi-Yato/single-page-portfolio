@@ -76,7 +76,7 @@ export const HeroSection = () => {
           <div className='flex flex-col gap-4 text-center mt-8'>
             <h1 className={`${calistoga.className} text-3xl md:text-5xl tracking-wide`}>Building Exceptional User Experiences</h1>
             <p className='text-white/60 md:text-lg'>I specialize in transforming designs into functional, high-performing
-              web applications. Let's discuss your next project.</p>
+              web applications. Let&apos;s discuss your next project.</p>
           </div>
         </div>
         <div className='flex flex-col md:flex-row md:justify-center items-center gap-4 mt-8'>
