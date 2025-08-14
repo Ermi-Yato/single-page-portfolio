@@ -16,7 +16,7 @@ export const ContactSection = () => {
 
         <div className="flex flex-col items-center md:flex-row md:gap-20">
           <div className="flex flex-col gap-2">
-            <h2 className={`${calistoga.className} text-gray-950 text-2xl md:text-3xl`}>Let's create something amazing together</h2>
+            <h2 className={`${calistoga.className} text-gray-950 text-2xl md:text-3xl`}>Let&apos;s create something amazing together</h2>
             <p className="text-gray-900 text-sm md:text-base font-semibold">Ready to bring your next project to life?
               Let&apos;s connect and discuss how I can help you achieve your goals.
             </p>
