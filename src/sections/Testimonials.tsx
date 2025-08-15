@@ -10,6 +10,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CardComponent } from "@/components/CardComponent";
+import { Fragment } from "react";
 
 const testimonials = [
   {
@@ -45,6 +46,7 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
+  const dummyArray = new Array(3)
   return (
     <div className="py-16 lg:py-24 container z-0">
 
@@ -52,21 +54,26 @@ export const TestimonialsSection = () => {
         See what my clients have to say about my work." />
 
       <div className="mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="flex flex-none gap-8">
-          {testimonials.map((testimonial) => (
-            <CardComponent key={testimonial.name} className="relative max-w-xs md:max-w-md md:p-8 bg-gray-800 border border-gray-500 rounded-[25px] overflow-hidden p-6 overflow-x-clip">
+        <div className="flex flex-none gap-8 pr-8 py-4 animate-animate-left [animation-duration:80s] hover:[animation-play-state:paused]">
+          {dummyArray.fill(0).map((_, index) => (
+            <Fragment key={index}>
+              {testimonials.map((testimonial) => (
+                <CardComponent key={testimonial.name} className="relative max-w-xs md:max-w-md lg:max-w-lg md:p-8 bg-gray-800 border border-gray-500 rounded-[25px] overflow-hidden p-6 overflow-x-clip hover:-rotate-3 transition duration-300">
 
-              <div className="flex items-center gap-4">
-                <Image src={testimonial.avatar} alt="avatar" className="size-16 bg-gray-700 rounded-full" />
-                <div>
-                  <div className="font-semibold ">{testimonial.name}</div>
-                  <div className="text-sm text-white/40">{testimonial.position}</div>
-                </div>
-              </div>
+                  <div className="flex items-center gap-4">
+                    <Image src={testimonial.avatar} alt="avatar" className="size-16 bg-gray-700 rounded-full" />
+                    <div>
+                      <div className="font-semibold ">{testimonial.name}</div>
+                      <div className="text-sm text-white/40">{testimonial.position}</div>
+                    </div>
+                  </div>
 
-              <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
-            </CardComponent>
+                  <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
+                </CardComponent>
+              ))}
+            </Fragment>
           ))}
+
         </div>
       </div>
 

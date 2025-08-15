@@ -2,8 +2,6 @@
 // PROJECTS SECTION
 // ======================================================
 
-//WARNING: FIX THE Z-INDEX ON THE PROJECT CARDS
-
 import Image from "next/image";
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";

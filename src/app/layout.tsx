@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Calistoga } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'] })
-const calistoga = Calistoga({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Portifolio-project",
   description: "Created with the help of Frontend Tribe",
 };
 

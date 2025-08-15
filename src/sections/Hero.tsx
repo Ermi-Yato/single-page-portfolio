@@ -9,6 +9,7 @@ import { Calistoga } from 'next/font/google'
 import StarIcon from '@/assets/icons/star.svg'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import { HeroOrbit } from '@/components/HeroOrbit'
+import grainImage from "@/assets/images/grain.jpg"
 
 export const calistoga = Calistoga({ subsets: ['latin'], weight: ['400'] })
 const heroRingStyle = 'absolute inset-0 border border-emerald-400/5 shadow-[0_0_80px_inset] shadow-emerald-400/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full -z-50'
@@ -16,7 +17,11 @@ const heroRingStyle = 'absolute inset-0 border border-emerald-400/5 shadow-[0_0_
 export const HeroSection = () => {
   return (
     <div className='py-[120px] md:py-40 lg:py-52 relative z-0 overflow-x-clip'>
+
       <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
+        <div className='absolute inset-0 -z-30 opacity-5' style={{
+          backgroundImage: `url(${grainImage.src})`
+        }}></div>
         {/* ring containers */}
         <div className={`${heroRingStyle} size-[600px]`}></div>
         <div className={`${heroRingStyle} size-[800px]`}></div>

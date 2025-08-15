@@ -24,7 +24,7 @@ export const TapeSection = () => {
       <div className='bg-gradient-to-r from-emerald-300 to-cyan-500 py-3 -rotate-3'>
 
         <div className='flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]'>
-          <div className='flex flex-none gap-4 text-gray-900 animate-animate-tape'>
+          <div className='flex flex-none gap-4 pr-4 text-gray-900 animate-animate-left [animation-duration:30s]'>
             {dummyArray.fill(0).map((_, index) => (
               <Fragment key={index}>
                 {words.map((word) => (

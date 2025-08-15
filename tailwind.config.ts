@@ -24,7 +24,8 @@ const config: Config = {
     extend: {
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
-        "animate-tape": "animate-tape 10s linear infinite"
+        "animate-left": "animate-left 1s linear infinite",
+        "animate-right": "animate-right 1s linear infinite"
       },
       keyframes: {
         "ping-large": {
@@ -33,14 +34,22 @@ const config: Config = {
             opacity: "0"
           }
         },
-        "animate-tape": {
+        "animate-left": {
           "0%": {
             transform: "translateX(0%)"
           },
           "100%": {
             transform: "translateX(-50%)"
           }
-        }
+        },
+        "animate-right": {
+          "0%": {
+            transform: "translateX(-50%)"
+          },
+          "100%": {
+            transform: "translateX(0%)"
+          }
+        },
       }
     },
   },
