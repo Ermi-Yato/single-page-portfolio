@@ -8,7 +8,7 @@ import { calistoga } from "./Hero"
 
 export const ContactSection = () => {
   return (
-    <div className="container py-20 lg:max-w-5xl lg:py-24">
+    <div className="container py-20 lg:max-w-5xl lg:py-24" id="contact">
       <div className="bg-gradient-to-r from-emerald-300 to-sky-400 rounded-[25px] px-9 py-8 text-center relative overflow-hidden z-0 md:text-left">
         <div className="absolute inset-0 opacity-5 -z-10" style={{
           backgroundImage: `url(${grainImage.src})`

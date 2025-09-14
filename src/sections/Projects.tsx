@@ -2,6 +2,7 @@
 // PROJECTS SECTION
 // ======================================================
 
+
 import Image from "next/image";
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
@@ -54,7 +55,7 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   const offset = 30
   return (
-    <div className="container lg:max-w-5xl pb-10 lg:pt-24">
+    <div className="container lg:max-w-5xl pb-10 lg:pt-24" id="projects">
 
       <SectionHeader title="Real-world Results" header="Featured Projects" description="See how I transformed concepts into engaging digital experiences." />
 

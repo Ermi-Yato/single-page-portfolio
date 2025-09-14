@@ -23,7 +23,3 @@
 
 ## Live Demo
  [View Live on Vercel](https://nextjs-portifolio-sooty.vercel.app/)
-
-## Acknowledgments
-A special thanks to [Frontend Tribe](https://www.youtube.com/@frontend-tribe) for his incredible YouTube tutorials and UI inspirations. His creative approach to modern web design motivated me to build this project from scratch, implementing my own twists while learning advanced frontend techniques.
-

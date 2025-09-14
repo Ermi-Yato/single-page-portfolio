@@ -62,7 +62,7 @@ const personalHobbies = [
 export const AboutSection = () => {
   const constraintRef = useRef(null)
   return (
-    <div className="py-16 lg:py-32">
+    <div className="py-16 lg:py-32" id="about">
 
       <SectionHeader title="About Me"
         header="A Glimpse Into My World"
